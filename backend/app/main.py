@@ -55,7 +55,14 @@ app.add_middleware(
 app.include_router(jobs.router(engine), prefix="/api")
 app.include_router(metrics.router(engine), prefix="/api")
 
-static_dir = Path(__file__).resolve().parents[2] / "frontend_dist"
+app_root = Path(__file__).resolve().parents[1]
+repo_root = Path(__file__).resolve().parents[2]
+static_candidates = [
+    app_root / "frontend_dist",
+    repo_root / "frontend_dist",
+    repo_root / "frontend" / "dist",
+]
+static_dir = next((path for path in static_candidates if path.exists()), static_candidates[0])
 assets_dir = static_dir / "assets"
 if assets_dir.exists():
     app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
