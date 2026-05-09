@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      CJQD_WORKER_COUNT: 6
+      CJQD_QUEUE_CAPACITY: 96
+      CJQD_RETRY_DELAY_SECONDS: 1.0
+      CJQD_METRICS_INTERVAL_SECONDS: 1.0
+      CJQD_CORS_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:5173"
+    environment:
+      NODE_ENV: development
+      VITE_PROXY_TARGET: http://backend:8000
+      VITE_WS_PROXY_TARGET: ws://backend:8000

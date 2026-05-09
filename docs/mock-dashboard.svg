@@ -1,0 +1,48 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" fill="#0B0F17"/>
+  <path d="M0 0H1440V260H0V0Z" fill="#10252A" fill-opacity="0.32"/>
+  <g opacity="0.26">
+    <path d="M0 64H1440M0 128H1440M0 192H1440M0 256H1440M0 320H1440M0 384H1440M0 448H1440M0 512H1440M0 576H1440M0 640H1440M0 704H1440M0 768H1440M0 832H1440" stroke="#94A3B8" stroke-opacity="0.15"/>
+    <path d="M64 0V900M128 0V900M192 0V900M256 0V900M320 0V900M384 0V900M448 0V900M512 0V900M576 0V900M640 0V900M704 0V900M768 0V900M832 0V900M896 0V900M960 0V900M1024 0V900M1088 0V900M1152 0V900M1216 0V900M1280 0V900M1344 0V900" stroke="#94A3B8" stroke-opacity="0.15"/>
+  </g>
+  <text x="72" y="78" fill="#E2E8F0" font-family="Inter, Arial" font-size="34" font-weight="700">Concurrent Job Queue Dashboard</text>
+  <text x="72" y="112" fill="#94A3B8" font-family="Inter, Arial" font-size="16">Live queue pressure, worker saturation, retries, throughput, and p95 latency</text>
+  <rect x="72" y="150" width="282" height="116" rx="6" fill="#10151F" stroke="#263142"/>
+  <rect x="386" y="150" width="282" height="116" rx="6" fill="#10151F" stroke="#263142"/>
+  <rect x="700" y="150" width="282" height="116" rx="6" fill="#10151F" stroke="#263142"/>
+  <rect x="1014" y="150" width="282" height="116" rx="6" fill="#10151F" stroke="#263142"/>
+  <text x="96" y="188" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="13">QUEUE DEPTH</text>
+  <text x="96" y="231" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="38">42</text>
+  <text x="410" y="188" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="13">THROUGHPUT</text>
+  <text x="410" y="231" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="38">118/s</text>
+  <text x="724" y="188" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="13">UTILIZATION</text>
+  <text x="724" y="231" fill="#FBBF24" font-family="JetBrains Mono, monospace" font-size="38">87%</text>
+  <text x="1038" y="188" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="13">RETRIES / FAILURES</text>
+  <text x="1038" y="231" fill="#FB7185" font-family="JetBrains Mono, monospace" font-size="38">19 / 3</text>
+  <rect x="72" y="298" width="592" height="270" rx="6" fill="#10151F" stroke="#263142"/>
+  <rect x="704" y="298" width="592" height="270" rx="6" fill="#10151F" stroke="#263142"/>
+  <text x="96" y="334" fill="#CBD5E1" font-family="Inter, Arial" font-size="14" font-weight="700">QUEUE PRESSURE</text>
+  <text x="728" y="334" fill="#CBD5E1" font-family="Inter, Arial" font-size="14" font-weight="700">THROUGHPUT AND P95 LATENCY</text>
+  <path d="M112 512C170 446 198 472 255 405C316 332 374 471 426 401C487 319 552 381 624 345" stroke="#4FD1C5" stroke-width="4" fill="none"/>
+  <path d="M112 512L255 405L426 401L624 345V532H112V512Z" fill="#4FD1C5" fill-opacity="0.14"/>
+  <path d="M744 504C812 462 852 480 910 415C970 349 1026 391 1076 362C1140 326 1194 338 1260 318" stroke="#34D399" stroke-width="4" fill="none"/>
+  <path d="M744 398C812 438 854 352 916 382C986 416 1038 376 1092 430C1148 486 1194 405 1260 458" stroke="#FBBF24" stroke-width="4" fill="none"/>
+  <rect x="72" y="600" width="1224" height="112" rx="6" fill="#10151F" stroke="#263142"/>
+  <text x="96" y="636" fill="#CBD5E1" font-family="Inter, Arial" font-size="14" font-weight="700">WORKER LANES</text>
+  <g>
+    <rect x="96" y="656" width="120" height="36" rx="4" fill="#12302A" stroke="#34D399" stroke-opacity="0.5"/>
+    <rect x="232" y="656" width="120" height="36" rx="4" fill="#0F172A" stroke="#263142"/>
+    <rect x="368" y="656" width="120" height="36" rx="4" fill="#12302A" stroke="#34D399" stroke-opacity="0.5"/>
+    <rect x="504" y="656" width="120" height="36" rx="4" fill="#12302A" stroke="#34D399" stroke-opacity="0.5"/>
+    <rect x="640" y="656" width="120" height="36" rx="4" fill="#0F172A" stroke="#263142"/>
+    <rect x="776" y="656" width="120" height="36" rx="4" fill="#12302A" stroke="#34D399" stroke-opacity="0.5"/>
+    <rect x="912" y="656" width="120" height="36" rx="4" fill="#12302A" stroke="#34D399" stroke-opacity="0.5"/>
+    <rect x="1048" y="656" width="120" height="36" rx="4" fill="#0F172A" stroke="#263142"/>
+  </g>
+  <rect x="72" y="744" width="780" height="112" rx="6" fill="#10151F" stroke="#263142"/>
+  <rect x="884" y="744" width="412" height="112" rx="6" fill="#10151F" stroke="#263142"/>
+  <text x="96" y="780" fill="#CBD5E1" font-family="Inter, Arial" font-size="14" font-weight="700">ACTIVE JOBS</text>
+  <text x="908" y="780" fill="#CBD5E1" font-family="Inter, Arial" font-size="14" font-weight="700">LIVE EVENTS</text>
+  <text x="96" y="820" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="13">f3a92d71 cpu high running w3 attempt 1/2</text>
+  <text x="908" y="820" fill="#4FD1C5" font-family="JetBrains Mono, monospace" font-size="13">job_retried</text>
+</svg>

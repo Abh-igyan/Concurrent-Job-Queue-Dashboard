@@ -1,0 +1,74 @@
+[
+  {
+    "workload": "small",
+    "workers": 1,
+    "tasks": 200,
+    "task_duration_ms": 10,
+    "serial_seconds": 2.0006853000086267,
+    "concurrent_seconds": 2.0028079000185244,
+    "speedup": 0.9989401879182331,
+    "throughput_jobs_sec": 99.85980183029544,
+    "latency_avg_ms": 10.002536499523558,
+    "latency_p95_ms": 10.007600008975714
+  },
+  {
+    "workload": "small",
+    "workers": 2,
+    "tasks": 200,
+    "task_duration_ms": 10,
+    "serial_seconds": 2.0006853000086267,
+    "concurrent_seconds": 1.6194653999991715,
+    "speedup": 1.2353986074723486,
+    "throughput_jobs_sec": 123.49754431314328,
+    "latency_avg_ms": 16.140351499634562,
+    "latency_p95_ms": 37.81750000780448
+  },
+  {
+    "workload": "medium",
+    "workers": 1,
+    "tasks": 100,
+    "task_duration_ms": 50,
+    "serial_seconds": 5.000166799989529,
+    "concurrent_seconds": 5.002815099986037,
+    "speedup": 0.9994706380420664,
+    "throughput_jobs_sec": 19.988745936318754,
+    "latency_avg_ms": 50.00627899920801,
+    "latency_p95_ms": 50.011799990898
+  },
+  {
+    "workload": "medium",
+    "workers": 2,
+    "tasks": 100,
+    "task_duration_ms": 50,
+    "serial_seconds": 5.000166799989529,
+    "concurrent_seconds": 2.955797300004633,
+    "speedup": 1.6916473940827037,
+    "throughput_jobs_sec": 33.831819252234666,
+    "latency_avg_ms": 59.022332999738865,
+    "latency_p95_ms": 78.97740000043996
+  },
+  {
+    "workload": "large",
+    "workers": 1,
+    "tasks": 50,
+    "task_duration_ms": 150,
+    "serial_seconds": 7.500133699999424,
+    "concurrent_seconds": 7.502047999994829,
+    "speedup": 0.9997448296791214,
+    "throughput_jobs_sec": 6.6648467191938074,
+    "latency_avg_ms": 150.00968799984548,
+    "latency_p95_ms": 150.01240000128746
+  },
+  {
+    "workload": "large",
+    "workers": 2,
+    "tasks": 50,
+    "task_duration_ms": 150,
+    "serial_seconds": 7.500133699999424,
+    "concurrent_seconds": 3.934060200001113,
+    "speedup": 1.9064613449477212,
+    "throughput_jobs_sec": 12.709515731352015,
+    "latency_avg_ms": 156.4105020003626,
+    "latency_p95_ms": 173.57149999588728
+  }
+]
