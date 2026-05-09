@@ -1,0 +1,27 @@
+services:
+  - type: web
+    runtime: docker
+    name: concurrent-job-queue-dashboard
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: CJQD_WORKER_COUNT
+        value: "4"
+      - key: CJQD_QUEUE_CAPACITY
+        value: "128"
+      - key: CJQD_ENQUEUE_TIMEOUT_SECONDS
+        value: "2.0"
+      - key: CJQD_RETRY_DELAY_SECONDS
+        value: "1.0"
+      - key: CJQD_DEFAULT_MAX_RETRIES
+        value: "2"
+      - key: CJQD_METRICS_INTERVAL_SECONDS
+        value: "1.0"
+      - key: CJQD_HISTORY_LIMIT
+        value: "256"
+      - key: CJQD_LOG_LEVEL
+        value: "INFO"
+      - key: CJQD_CORS_ORIGINS
+        value: "*"

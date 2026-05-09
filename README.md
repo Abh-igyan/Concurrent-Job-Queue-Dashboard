@@ -83,6 +83,26 @@ stateDiagram-v2
     cancelled --> [*]
 ```
 
+## Deploy For Free On Render
+
+The easiest deploy path is the included `render.yaml` Blueprint. It creates one free Docker web service that:
+
+- Builds the React frontend.
+- Runs the FastAPI backend.
+- Serves the dashboard and WebSocket API from the same origin.
+
+Steps:
+
+1. Open Render Blueprints: [https://dashboard.render.com/blueprints](https://dashboard.render.com/blueprints)
+2. Click **New Blueprint Instance**.
+3. Connect this GitHub repository.
+4. Select the `render.yaml` file.
+5. Create the service.
+
+After deploy, open the Render service URL. The dashboard, API, WebSocket stream, and `/api/prometheus` endpoint all run from that same URL.
+
+Free hosting is not unlimited. Render free services are excellent for demos and portfolio projects, but they have free-tier limits and may sleep or suspend after quota exhaustion.
+
 ## Run With Docker
 
 ```bash
